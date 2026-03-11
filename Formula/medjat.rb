@@ -5,20 +5,20 @@
 class Medjat < Formula
   desc "Medjat CLI for memory-native AI agents"
   homepage "https://medjat.dev"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/darknet-developer/Medjat/releases/download/v0.1.1/medjat_0.1.1_darwin_amd64.tar.gz"
-      sha256 "2d0f927393bb8706d048b3c064f0c2eba65b2c43ad98b59ad4351a0c03f00442"
+      url "https://github.com/darknet-developer/Medjat/releases/download/v0.1.2/medjat_0.1.2_darwin_amd64.tar.gz"
+      sha256 "24f4ac096bd777d81e0742505167041a0ccda1c47f419b3ebb5e3a6d6c83bff8"
 
       define_method(:install) do
         bin.install "medjat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/darknet-developer/Medjat/releases/download/v0.1.1/medjat_0.1.1_darwin_arm64.tar.gz"
-      sha256 "43331df3a8663917631bc72679e933c47a22001c7b9b54d1675be1d2fc441ab6"
+      url "https://github.com/darknet-developer/Medjat/releases/download/v0.1.2/medjat_0.1.2_darwin_arm64.tar.gz"
+      sha256 "370d5806a7c175b74f4d93aed283ce8fc97d5abc82aecb7a51d12659f1660088"
 
       define_method(:install) do
         bin.install "medjat"
@@ -28,15 +28,15 @@ class Medjat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darknet-developer/Medjat/releases/download/v0.1.1/medjat_0.1.1_linux_amd64.tar.gz"
-      sha256 "5c65fc09e79083c74c0d476c83b4505f74f801a5828751782ca959fd873f4faa"
+      url "https://github.com/darknet-developer/Medjat/releases/download/v0.1.2/medjat_0.1.2_linux_amd64.tar.gz"
+      sha256 "016037fc143d2afdbe400ada0f1d3eb6e6c784b58fefffda528474b1c6e19f78"
       define_method(:install) do
         bin.install "medjat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darknet-developer/Medjat/releases/download/v0.1.1/medjat_0.1.1_linux_arm64.tar.gz"
-      sha256 "85891df5421f3d26e30748e68692fbfa38ea499f6a14c9b51ad1e8c624c53d44"
+      url "https://github.com/darknet-developer/Medjat/releases/download/v0.1.2/medjat_0.1.2_linux_arm64.tar.gz"
+      sha256 "3041e5d340cd4c4e212833733a15038fb69d8057c917ee8c1728a7e13d2ea405"
       define_method(:install) do
         bin.install "medjat"
       end
